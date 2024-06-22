@@ -1,9 +1,11 @@
+## Long-Polling Test
+
 ```s
 $ curl -X POST -H "Content-Type: application/json" -d '{"message":"Hello, World2!"}' http://localhost:8080/event
 ```
 
 ```s
-$ curl -X GET -d 'test' http://localhost:8080/long-polling -v
+$ curl -X GET http://localhost:8080/long-polling -v
 *   Trying 127.0.0.1:8080...
 * TCP_NODELAY set
 * Connected to localhost (127.0.0.1) port 8080 (#0)
